@@ -1,0 +1,15 @@
+<table id="documents" class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= t('blacklight.table.counter') %></th>
+      <th><%= t('blacklight.table.title') %></th>
+      <th><%= t('blacklight.table.document_actions') %></th>
+      <% index_fields.each do |key, field| %>
+        <th><%= render_index_field_label field: key %></th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render partial: "document_row", collection: documents, as: :document, locals: { fields: index_fields } %>
+  </tbody>
+</table>

@@ -1,0 +1,9 @@
+en:
+  blacklight:
+    search:
+      view:
+        table: "Table"
+    table:
+      counter: ""
+      title: "Title"
+      document_actions: ""

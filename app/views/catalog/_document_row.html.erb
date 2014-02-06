@@ -1,0 +1,12 @@
+<% counter = document_counter_with_offset(document_counter) %>
+
+<tr class="document-row <%= render_document_class document %>" itemscope itemtype="<%= document.itemtype %>">
+  <td class="counter"><%= counter %></td>
+  <td class="index_title"><%= link_to_document document, label:document_show_link_field(document) %></td>
+  <td>
+    <%= render_index_doc_actions document, wrapping_class: "index-document-functions col-sm-3 col-lg-2" %>
+  </td>
+<% fields.each do |key, config| %>
+  <td><%= render_index_field_value document, field: key %></td> 
+<% end %>
+</tr>
