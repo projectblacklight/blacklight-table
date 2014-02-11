@@ -2,8 +2,8 @@ en:
   blacklight:
     search:
       view:
-        table: "Table"
-    table:
+        data_grid: "Table"
+    data_grid:
       counter: ""
       title: "Title"
       document_actions: ""
